@@ -16,7 +16,7 @@
         <input type="text" name="satuan" class="form-control" value="<?= $row->satuan;?>">
       </div>
       <div class="form-group">
-        <label>Stok</label>
+        <label>Persediaan</label>
         <input type="number" name="stok" class="form-control" value="<?= $row->stok;?>">
       </div>
       <div class="form-group">
@@ -24,8 +24,8 @@
         <input type="number" name="harga_satuan" class="form-control" value="<?= $row->harga_satuan;?>">
       </div>
 
-      <button type="submit" class="btn btn-primary">Update Data</button>
-      <a href="<?= base_url('barang'); ?>" class="btn btn-danger">Batal/Kembali</a>
+      <button type="submit" class="btn btn-primary">Update</button>
+      <a href="<?= base_url('barang'); ?>" class="btn btn-danger">Kembali</a>
     </form>
   <?php } ?>
   </div>

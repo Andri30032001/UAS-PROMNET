@@ -1,6 +1,6 @@
 <footer class="footer mt-auto py-3">
   <div class="container">
-    <span class="text-muted">Dibuat Oleh : <a href="https://youtube.com/c/PresetChannel">ANDRY MONE.com</a></span>
+    <span class="text-muted">Dibuat Oleh : <a href="https://youtube.com/c/MoneSanz">MONE SANZ</a></span>
   </div>
 </footer>
 <script src="<?= base_url();?>assets/js/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

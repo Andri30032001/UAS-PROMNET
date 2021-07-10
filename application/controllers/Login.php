@@ -37,7 +37,7 @@ class Login extends CI_Controller{
 
 				$this->session->set_userdata($sess_data);
 
-				redirect(base_url('barang'));
+				redirect(base_url());
 
 			}else{
 				redirect(base_url('login'));

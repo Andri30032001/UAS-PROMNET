@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 23 Bulan Mei 2021 pada 19.06
+-- Waktu pembuatan: 10 Jul 2021 pada 09.18
 -- Versi server: 10.4.14-MariaDB
 -- Versi PHP: 7.4.11
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `uts_promnet`
+-- Database: `uas_promnet`
 --
 
 -- --------------------------------------------------------
@@ -31,7 +31,7 @@ CREATE TABLE `barang` (
   `id_barang` int(10) NOT NULL,
   `nama_barang` varchar(100) NOT NULL,
   `satuan` varchar(20) NOT NULL,
-  `stok` int(4) NOT NULL,
+  `stok` int(11) NOT NULL,
   `harga_satuan` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -40,10 +40,10 @@ CREATE TABLE `barang` (
 --
 
 INSERT INTO `barang` (`id_barang`, `nama_barang`, `satuan`, `stok`, `harga_satuan`) VALUES
-(12, 'HANPHONE R.O.G', 'buah', 5, 200000),
-(14, 'IPHONE 12+', 'buah', 5, 200000),
-(16, 'KOMPUTER', 'buah', 10, 1000000),
-(17, 'STREO SPEAKERS RS170', 'buah', 2, 87000);
+(12, 'KACA', 'buah', 7, 45000),
+(14, 'Printer', 'buah', 9, 500000),
+(18, 'laptop', 'buah', 6, 500000),
+(20, 'IPHONE 12+', 'buah', 10, 1600000);
 
 -- --------------------------------------------------------
 
@@ -64,7 +64,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `nama_lengkap`, `email`) VALUES
-(5, 'Andry Mone', '18457b94d6e1cdfbbb1962278904d3b5', 'Andri Marselindo Mone', 'andrymone30032001@gmail.com');
+(5, 'admin', 'AndryMone', 'Andri Marselindo Mone', 'andrymone30032001@gmail.com');
 
 --
 -- Indexes for dumped tables
@@ -90,13 +90,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT untuk tabel `barang`
 --
 ALTER TABLE `barang`
-  MODIFY `id_barang` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id_barang` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

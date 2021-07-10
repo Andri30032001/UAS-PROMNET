@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>ANDRY SHOP</title>
+    <title>WEBSITE ANDRI</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?= base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
@@ -34,17 +34,19 @@
     <header>
   <!-- Fixed navbar -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="<?= base_url();?>">ANDRY SHOP</a>
+    <a class="navbar-brand" style="margin-left: 10px" href="<?= base_url();?>">UAS</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
+        <li class="nav-item" style="margin-left: 5px">
           <a class="nav-link" href="<?= base_url('barang'); ?>">BARANG<span class="sr-only">(current)</span></a>
         </li>
+         <a class="btn btn-primary" style="margin-left: 5px" href="<?php echo base_url('barang/print'); ?>"> <i class="fa fa-print"></i> Print</a>
         <li class="nav-item" style="margin-left: 1140px">
-          <a class="nav-link" href="<?= base_url('login/logout'); ?>">LOGOUT/KELUAR</a>
+          <a class="nav-link" href="<?= base_url('login/logout'); ?>">KELUAR</a>
+        </li>
         </li>
       </ul>
     </div>

@@ -17,7 +17,7 @@
         <small><span class="text-danger"><i><?= form_error('satuan'); ?></i></span></small>
       </div>
       <div class="form-group">
-        <label>Stok</label>
+        <label>Persediaan</label>
         <input type="text" name="stok" class="form-control" value="<?= set_value('stok'); ?>">
         <small><span class="text-danger"><i><?= form_error('stok'); ?></i></span></small>
       </div>
@@ -27,7 +27,7 @@
       </div>
 
       <button type="submit" class="btn btn-primary">Simpan Data</button>
-      <a href="<?= base_url('barang'); ?>" class="btn btn-danger">Batal/Kembali</a>
+      <a href="<?= base_url('barang'); ?>" class="btn btn-danger">Kembali</a>
     </form>
 
   </div>

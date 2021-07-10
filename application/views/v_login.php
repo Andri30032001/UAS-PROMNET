@@ -16,7 +16,7 @@
       <div class="col-md-4 offset-md-4">
         <div class="card card-primary">
           <div class="card-header">
-            <center><font color="red">LOGIN</center>
+            <center>LOGIN</center>
           </div>
           <div class="card-body">
             <form method="post" action="<?= base_url('login/login_aksi');?>">

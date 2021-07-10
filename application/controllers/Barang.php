@@ -94,4 +94,9 @@ class Barang extends CI_Controller {
 		redirect('barang');
 	}
 
+	public function print(){
+		$data['barang'] = $this->m_barang->tampil_data("tb_barang")->result();
+		$this->load->view('print_Barang', $data);
+	}
+
 }
